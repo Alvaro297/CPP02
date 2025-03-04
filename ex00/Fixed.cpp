@@ -7,13 +7,13 @@ Fixed &Fixed::operator=(const Fixed &f)
 	return (*this);
 }
 
-Fixed::Fixed(const Fixed &f)
-{
+Fixed::Fixed(const Fixed &f){
 	this->value = f.value;
 }
+
 Fixed::Fixed(){}
 
 Fixed::~Fixed(){}
 
 int Fixed::getRawBits(void) const { return this->value; }
-void Fixed::setRawBits(int const raw){ this->value = raw * (2^this->fracBits);}
+void Fixed::setRawBits(int const raw){ this->value = raw * (1 << fracBits);}
