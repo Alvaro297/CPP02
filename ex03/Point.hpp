@@ -13,5 +13,7 @@ public:
 	Point(const float x, const float y);
 	Point(const Point &p);
 	~Point();
+	Fixed getX(void) const;
+	Fixed getY(void) const;
 };
 #endif
