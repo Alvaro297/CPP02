@@ -1,5 +1,5 @@
 # Program name
-NAME	= brainzz
+NAME	= ex03
 
 # Compiler
 CC		= c++
@@ -9,10 +9,10 @@ CFLAGS	= -Werror -Wextra -Wall -std=c++98
 INC_PATH	= ./includes/
 INC			= -I $(INC_PATH)
 
-SRC_PATH	= ./sources/
 SRC			=	Fixed.cpp \
+				Point.cpp \
 				main.cpp
-SRCS		= $(addprefix $(SRC_PATH), $(SRC))
+SRCS		= $(SRC)
 
 OBJ_PATH	= ./objects/
 OBJ			= $(SRC:.cpp=.o)
