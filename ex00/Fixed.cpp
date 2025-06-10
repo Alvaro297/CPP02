@@ -11,7 +11,11 @@ Fixed::Fixed(const Fixed &f){
 	this->value = f.value;
 }
 
-Fixed::Fixed(){}
+Fixed::Fixed() : value(0)
+{
+	std::cout << "Default constructor called" << std::endl;
+
+}
 
 Fixed::~Fixed(){}
 
